@@ -66,7 +66,7 @@ The code is tested on **A800/H20/Ascend 910b** servers. To setup the python envi
     git clone https://github.com/flymin/ColossalAI.git
     git checkout pt2.4 && git pull
     cd ColossalAI
-    BUILD_EXT=1 pip install .
+    BUILD_EXT=1 pip install .  # 卡这一步了
     ```
 3. Install other dependencies
     ```bash
@@ -108,7 +108,7 @@ Please refer to the following yaml files for further details:
 
 Please refer to `requirements/910b_cann8.0.RC2_aarch64.yaml` for further details.
 
-### Pretrained Weights
+### Pretrained Weights 这都下好了
 
 **VAE**: We use the 3DVAE from [THUDM/CogVideoX-2b](https://huggingface.co/THUDM/CogVideoX-2b). It is OK if you only download the `vae` sub-folder.
 
@@ -123,7 +123,7 @@ ${CODE_ROOT}/pretrained/
 └── t5-v1_1-xxl
 ```
 
-### MagicDriveDiT Checkpoints
+### MagicDriveDiT Checkpoints 这也下好了
 
 Please download the stage-3 checkpoint from [flymin/MagicDriveDiT-stage3-40k-ft](https://huggingface.co/flymin/MagicDriveDiT-stage3-40k-ft) and put it in `${CODE_ROOT}/ckpts/` as:
 
